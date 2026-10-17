@@ -32,7 +32,7 @@ const Projects = () => {
       <div className="flex flex-col gap-4">
         {featuredProject && (
           <article className="grid md:grid-cols-2 items-center rounded-2xl p-4 gap-6 bg-(--gray-750) border border-(--border-accent)">
-            <div className="flex flex-col gap-4 items-start">
+            <div className="flex flex-col gap-4 items-start order-2 md:order-1">
               <div className="uppercase bg-(--light-blue)/20 text-(--light-blue) font-bold text-[10px] px-2 py-1 rounded-full">
                 featured project
               </div>
@@ -95,7 +95,7 @@ const Projects = () => {
               )}
             </div>
 
-            <div className="rounded-xl border border-(--border-accent) overflow-hidden w-full">
+            <div className="rounded-xl border border-(--border-accent) overflow-hidden w-full md:order-2 order-1">
               <img
                 src={featuredProject.image}
                 alt={`${featuredProject.title} project preview`}

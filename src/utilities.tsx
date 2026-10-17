@@ -138,6 +138,7 @@ export const projects: Project[] = [
     skills: [
       "React",
       "TypeScript",
+      "Tailwind CSS",
       "REST APIs",
       "PostgreSQL",
       "Supabase",
@@ -146,6 +147,34 @@ export const projects: Project[] = [
     links: {
       live: "https://foreign-exchange-checker-zeta.vercel.app/",
       code: "https://github.com/Melodyysol/Foreign-exchange-checker",
+    },
+  },
+  {
+    title: "Furniture Store",
+    image: furnitureStore,
+    description:
+      "A furniture storefront concept with product browsing, a shopping cart, and a responsive product showcase. The users use local storage to retain their session.",
+    skills: [
+      "Local Storage",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Rest APIs",
+    ],
+    links: {
+      live: "https://ecommerce-project-two-brown.vercel.app/",
+      code: "https://github.com/Melodyysol/ecommerce-project",
+    },
+  },
+  {
+    title: "Sneaker Store",
+    image: sneakerStore,
+    description:
+      "A sneaker storefront concept featuring a searchable product catalog, collections, and shopping cart controls, with Supabase integration.",
+    skills: ["Supabase", "React", "TypeScript", "Tailwind CSS", "Rest APIs"],
+    links: {
+      live: "https://e-commerce-project-fm.vercel.app/",
+      code: "https://github.com/Melodyysol/e-commerce-project-fm",
     },
   },
   {
@@ -168,34 +197,6 @@ export const projects: Project[] = [
     links: {
       live: "https://melodyysol.github.io/Frontend-mentor/",
       code: "https://github.com/Melodyysol/Frontend-mentor",
-    },
-  },
-  {
-    title: "Furniture Store",
-    image: furnitureStore,
-    description:
-      "A furniture storefront concept with product browsing, a shopping cart, and a responsive product showcase. The cart uses local storage to retain its contents.",
-    skills: [
-      "Local Storage",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Rest APIs",
-    ],
-    links: {
-      live: "https://ecommerce-project-two-brown.vercel.app/",
-      code: "https://github.com/Melodyysol/ecommerce-project",
-    },
-  },
-  {
-    title: "Sneaker Store",
-    image: sneakerStore,
-    description:
-      "A sneaker storefront concept featuring a searchable product catalog, collections, and shopping cart controls, with Supabase integration.",
-    skills: ["Supabase", "React", "TypeScript", "Tailwind CSS", "Rest APIs"],
-    links: {
-      live: "https://e-commerce-project-fm.vercel.app/",
-      code: "https://github.com/Melodyysol/e-commerce-project-fm",
     },
   },
 ];

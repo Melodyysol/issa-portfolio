@@ -55,10 +55,9 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
             )}
           </button>
           <a
-            href="/Issa-Abduwaris-Resume.docx"
-            download="Issa-Abdulwaris-Resume.docx"
+            href="/Issa-Abdulwaris-Resume.pdf"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="hidden sm:block cursor-pointer transition-all duration-500 hover:scale-105 active:scale-95 px-5 py-2.5 rounded-[10px] bg-(--light-blue) text-white"
           >
             Resume
