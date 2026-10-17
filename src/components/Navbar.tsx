@@ -18,7 +18,7 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
   return (
     <>
       <div className="absolute left-1/2 -translate-x-1/2 -top-75 w-full max-w-250 h-150 rounded-full bg-(--eclipse-bg) blur-[150px]"></div>
-      <nav className="sticky z-10 flex items-center justify-between min-h-20 bg-(--nav-bg) rounded-[20px] px-4 sm:px-8 lg:px-12 py-2 border border-(--border-primary) mt-6 top-2 w-[calc(100%-2rem)] max-w-300">
+      <nav className="sticky z-10 flex items-center justify-between h-20 bg-(--nav-bg) rounded-[20px] px-4 sm:px-8 lg:px-12 py-2 border border-(--border-primary) mt-6 top-2 w-[calc(100%-2rem)] max-w-300">
         <div className="image-container px-3 py-2.5 bg-(--medium-blue) border border-(--border-primary) drop-shadow-sm drop-shadow-black rounded-full cursor-pointer">
           <img
             src={devLogo}
@@ -56,6 +56,7 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
           </button>
           <a
             href="/Issa-Abduwaris-Resume.docx"
+            download="Issa-Abdulwaris-Resume.docx"
             target="_blank"
             rel="noreferrer"
             className="hidden sm:block cursor-pointer transition-all duration-500 hover:scale-105 active:scale-95 px-5 py-2.5 rounded-[10px] bg-(--light-blue) text-white"
