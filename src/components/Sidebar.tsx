@@ -67,7 +67,7 @@ const Sidebar = ({ onClose, theme, onToggleTheme }: SidebarProps) => {
         {/* Resume */}
         <div className="mt-8">
           <a
-            href="/IsaDev_Resume.pdf"
+            href="/Issa-Abdulwaris-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center px-4 py-2 bg-(--light-blue) text-white rounded-lg hover:bg-(--accent) transition-colors duration-300 border"
