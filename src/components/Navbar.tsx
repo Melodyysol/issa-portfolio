@@ -38,12 +38,7 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
               <img
                 src={LargeLogo}
                 alt="Developer Web Logo"
-                className="h-10 hidden sm:block rounded-full"
-              />
-              <img
-                src={SmallLogo}
-                alt="Developer Mobile Logo"
-                className="h-15 sm:hidden rounded-full"
+                className="h-15 rounded-full"
               />
             </div>
 
