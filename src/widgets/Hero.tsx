@@ -13,9 +13,9 @@ const Hero = () => {
 
         <div className="flex flex-col w-full max-w-189.5 items-start capitalize">
           <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
-            frontend developer{" "}
-            <span className="bg-linear-to-r  from-(--light-blue) to-(--deep-blue) bg-clip-text text-transparent">
-              Building Digital Experiences
+            Hi, I'm IsaDev{" "}
+            <span className="bg-linear-to-r  from-(--light-blue) to-(--deep-blue) bg-clip-text text-transparent block">
+              Web developer
             </span>
           </h1>
         </div>

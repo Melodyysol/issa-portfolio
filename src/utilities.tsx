@@ -55,6 +55,13 @@ export type Project = {
   links: { live: string; code: string };
 };
 
+export const links = [
+  { link: "about me", to: "about" },
+  { link: "skills", to: "skills" },
+  { link: "projects", to: "projects" },
+  { link: "contact", to: "contact" },
+];
+
 export const skillCards: SkillCategory[] = [
   {
     title: "frontend",
