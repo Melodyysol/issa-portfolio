@@ -1,11 +1,11 @@
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import type { Theme } from "../utilities";
-import devLogo from "../assets/dev/logo.jpeg";
+import LargeLogo from "../assets/dev/isadev-large.jpeg";
+import SmallLogo from "../assets/dev/isadev-small.jpeg";
 
 const links = [
-  { link: "about me", to: "about" },
+  { link: "about", to: "about" },
   { link: "skills", to: "skills" },
-
   { link: "projects", to: "projects" },
   { link: "contact", to: "contact" },
 ];
@@ -18,12 +18,17 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
   return (
     <>
       <div className="absolute left-1/2 -translate-x-1/2 -top-75 w-full max-w-250 h-150 rounded-full bg-(--eclipse-bg) blur-[150px]"></div>
-      <nav className="sticky z-10 flex items-center justify-between h-20 bg-(--nav-bg) rounded-[20px] px-4 sm:px-8 lg:px-12 py-2 border border-(--border-primary) mt-6 top-2 w-[calc(100%-2rem)] max-w-300">
-        <div className="image-container px-3 py-2.5 bg-(--medium-blue) border border-(--border-primary) drop-shadow-sm drop-shadow-black rounded-full cursor-pointer">
+      <nav className="sticky z-10 flex items-center justify-between h-20 bg-(--nav-bg) rounded-[20px] px-2 sm:px-8 lg:px-12 py-2 border border-(--border-primary) mt-6 top-2 w-[calc(100%-2rem)] max-w-300">
+        <div className="image-container w-10 sm:w-auto p-0.5 sm:px-3 sm:py-2.5 bg-(--medium-blue) border border-(--border-primary) drop-shadow-sm drop-shadow-black rounded-full cursor-pointer">
           <img
-            src={devLogo}
-            alt="Developer Logo"
-            className="w-10 sm:w-16.25 rounded-full"
+            src={LargeLogo}
+            alt="Developer Web Logo"
+            className="h-10 hidden sm:block rounded-full"
+          />
+          <img
+            src={SmallLogo}
+            alt="Developer Mobile Logo"
+            className="h-auto sm:hidden rounded-full"
           />
         </div>
 
@@ -32,7 +37,7 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps) => {
             <li key={to}>
               <a
                 href={`#${to}`}
-                className={`px-2 sm:px-3 lg:px-5 py-2.5 border border-(--border-secondary) capitalize text-(--text-primary) rounded-[10px] cursor-pointer transition-all duration-500 hover:scale-105 active:scale-95 ${link === "contact" ? "text-white bg-(--light-blue)" : ""}`}
+                className={`px-1.5 py-1 sm:px-3 lg:px-5 sm:py-2.5 border border-(--border-secondary) capitalize text-(--text-primary) text-[clamp(0.875rem,2vw,1.25rem)] rounded-[10px] cursor-pointer transition-all duration-500 hover:scale-105 active:scale-95 ${link === "contact" ? "text-white bg-(--light-blue)" : ""}`}
               >
                 {link}
               </a>
